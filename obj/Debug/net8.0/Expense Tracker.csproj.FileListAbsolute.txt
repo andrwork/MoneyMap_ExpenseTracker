@@ -330,3 +330,4 @@ D:\3 курс\2 семестр\ПІ\Expense-Tracker-App-in-Asp.Net-Core-MVC-main
 D:\3 курс\2 семестр\ПІ\Expense-Tracker-App-in-Asp.Net-Core-MVC-main\Money Map Expense Tracker\Expense Tracker\obj\Debug\net8.0\Expense Tracker.pdb
 D:\3 курс\2 семестр\ПІ\Expense-Tracker-App-in-Asp.Net-Core-MVC-main\Money Map Expense Tracker\Expense Tracker\obj\Debug\net8.0\Expense Tracker.genruntimeconfig.cache
 D:\3 курс\2 семестр\ПІ\Expense-Tracker-App-in-Asp.Net-Core-MVC-main\Money Map Expense Tracker\Expense Tracker\obj\Debug\net8.0\ref\Expense Tracker.dll
+D:\3 курс\2 семестр\ПІ\Expense-Tracker-App-in-Asp.Net-Core-MVC-main\Money Map Expense Tracker\Expense Tracker\obj\Debug\net8.0\Expense Tracker.sourcelink.json
