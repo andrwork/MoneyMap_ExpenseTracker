@@ -1,33 +1,15 @@
 ﻿@{
-    List<Object> menuItems = new List<Object>();
-
-    menuItems.Add(new
+    List<object> menuItems = new List<object>
     {
-        text = "General",
-        separator = true,
-    });
-    menuItems.Add(new
-    {
-        text = "Dashboard",
-        url = "/",
-        iconCss = "fa-solid fa-box",
-    });
-    menuItems.Add(new
-    {
-        text = "Categories",
-        url = "/Category",
-        iconCss = "fa-solid fa-folder-closed",
-    });
-    menuItems.Add(new
-    {
-        text = "Transactions",
-        iconCss = "fa-solid fa-arrow-right-arrow-left",
-        url = "/Transaction"
-    });
+        new { text = "Основне", separator = true },
+        new { text = "Головна", url = Url.Action("Index", "Dashboard"), iconCss = "fa-solid fa-chart-line" },
+        new { text = "Категорії", url = Url.Action("Index", "Category"), iconCss = "fa-solid fa-folder-closed" },
+        new { text = "Транзакції", url = Url.Action("AddOrEdit", "Transaction"), iconCss = "fa-solid fa-arrow-right-arrow-left" }
+    };
 }
 
 <ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px"
-            target=".dock-target" enableGestures="false">
+             target=".dock-target" enableGestures="false">
     <e-content-template>
 
         <div class="logo-wrapper">
@@ -39,7 +21,12 @@
         </div>
 
         <div class="profile-wrapper">
-            <span>Money Map Expense Tracker</span>
+            @if (User?.Identity?.IsAuthenticated ?? false)
+            {
+                <div class="mt-1 text-muted small">
+                    @User.Identity.Name
+                </div>
+            }
         </div>
 
         <ejs-menu id="menu"

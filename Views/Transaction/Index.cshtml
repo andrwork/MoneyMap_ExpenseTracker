@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<Expense_Tracker.Models.Transaction>
 
 @{
-    ViewData["PageTitle"] = "Transactions";
-    ViewData["PageActionText"] = "+ New Transaction";
+    ViewData["PageTitle"] = "Транзакції";
+    ViewData["PageActionText"] = "+ Нова транзакція";
     ViewData["PageActionUrl"] = "/Transaction/AddOrEdit";
 }
 
@@ -12,11 +12,11 @@
                   allowSorting="true" allowPaging="true">
             <e-grid-pagesettings pageSize="10"></e-grid-pagesettings>
             <e-grid-columns>
-                <e-grid-column headerText="Category" field="CategoryTitleWithIcon"></e-grid-column>
-                <e-grid-column headerText="Date" field="Date" width="110px"
+                <e-grid-column headerText="Категорія" field="CategoryTitleWithIcon"></e-grid-column>
+                <e-grid-column headerText="Дата" field="Date" width="110px"
                     type="date" format="MMM-dd-yy" textAlign="Left"></e-grid-column>
-                <e-grid-column headerText="Amount" field="FormattedAmount" textAlign="Right" width="110px"></e-grid-column>
-                <e-grid-column headerText="Actions" template="#actionColumnTemplate" width="100px"></e-grid-column>
+                <e-grid-column headerText="Розмір" field="FormattedAmount" textAlign="Right" width="110px"></e-grid-column>
+                <e-grid-column headerText="Дії" template="#actionColumnTemplate" width="100px"></e-grid-column>
             </e-grid-columns>
         </ejs-grid>
     </div>
