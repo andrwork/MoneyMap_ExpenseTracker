@@ -1,6 +1,7 @@
 ﻿using Expense_Tracker.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Expense_Tracker.Controllers
 {
@@ -30,3 +31,4 @@ namespace Expense_Tracker.Controllers
         }
     }
 }
+

@@ -192,3 +192,29 @@ img.profile-pic {
     color: #222 !important;
 }
 
+.auth-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.auth-title {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.auth-subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.auth-button {
+    width: 100%;
+}

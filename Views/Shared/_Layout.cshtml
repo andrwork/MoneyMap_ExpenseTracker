@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Expense_Tracker.styles.css" asp-append-version="true" />
     <script src="https://cdn.syncfusion.com/ej2/20.1.55/dist/ej2.min.js"></script>
-
+    
 </head>
 <body class="e-bigger">
 
+    @if (ViewData["HideSidebar"] == null)
+{
     <partial name="_SideBar" />
+}
 
     <div class="dock-target">
 
@@ -73,5 +76,8 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
     <ejs-scripts></ejs-scripts>
+    @RenderBody()
+    @RenderSection("Scripts", required: false)
+
 </body>
 </html>

@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     List<Object> menuItems = new List<Object>();
 
     menuItems.Add(new
@@ -25,10 +24,7 @@
         iconCss = "fa-solid fa-arrow-right-arrow-left",
         url = "/Transaction"
     });
-
-  
 }
-
 
 <ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px"
             target=".dock-target" enableGestures="false">
@@ -50,15 +46,27 @@
                   items="menuItems"
                   orientation="Vertical"
                   hamburgerMode></ejs-menu>
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="mt-4 text-center">
+                <form asp-controller="Account" asp-action="Logout" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-outline-danger btn-sm w-75">
+                        <i class="fa-solid fa-right-from-bracket me-1"></i> Вийти
+                    </button>
+                </form>
+            </div>
+        }
+
     </e-content-template>
 </ejs-sidebar>
 
 <script>
-    document.addEventListener('DOMContentLoaded',function (){
-        dockBar = document.getElementById('sidebar').ej2_instances[0];
+    document.addEventListener('DOMContentLoaded', function () {
+        var dockBar = document.getElementById('sidebar').ej2_instances[0];
         document.getElementById('sidebar-toggler').onclick = function () {
             dockBar.toggle();
         };
     });
-
 </script>
