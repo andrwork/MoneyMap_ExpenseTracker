@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BWlSgaj9ywfBry7qd5eq01KDNbBuRvqS97RY2rv1BDg=",
+  "Hash": "ulB/bDmU6ddeACxL7oIK2xjxTPgPkCSlEikh7t41f48=",
   "Source": "Expense Tracker",
   "BasePath": "_content/Expense Tracker",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\3 курс\\2 семестр\\ПІ\\Expense-Tracker-App-in-Asp.Net-Core-MVC-main\\Money Map Expense Tracker\\Expense Tracker\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Expense Tracker.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\3 курс\\2 семестр\\ПІ\\Expense-Tracker-App-in-Asp.Net-Core-MVC-main\\Money Map Expense Tracker\\Expense Tracker\\wwwroot\\css\\auth.css",
+      "SourceId": "Expense Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\3 курс\\2 семестр\\ПІ\\Expense-Tracker-App-in-Asp.Net-Core-MVC-main\\Money Map Expense Tracker\\Expense Tracker\\wwwroot\\",
+      "BasePath": "_content/Expense Tracker",
+      "RelativePath": "css/auth.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\auth.css"
     },
     {
       "Identity": "D:\\3 курс\\2 семестр\\ПІ\\Expense-Tracker-App-in-Asp.Net-Core-MVC-main\\Money Map Expense Tracker\\Expense Tracker\\wwwroot\\css\\site.css",
